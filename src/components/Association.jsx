@@ -91,7 +91,7 @@ let Association = () => {
     return (<div>
         <h2>
             Detalles de la asociación{" "}
-            <Button color="primary" href="/react/association-stats">
+            <Button color="primary" href="/association-stats">
                 Volver a asociaciones
             </Button>
         </h2>
