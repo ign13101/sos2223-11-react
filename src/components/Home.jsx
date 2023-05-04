@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
 
 function Home() {
-    const url = "https://sos2223-11.ew.r.appspot.com/";
+    const url = "https://sos2223-11-react.vercel.app/";
 
     const teamMembers = [
         {
@@ -56,7 +56,7 @@ function Home() {
             <Col>
                 <p>
                     <strong>Repositorio: </strong>
-                    <a href="https://github.com/gti-sos/SOS2223-11">gti-sos/SOS2223-11</a>
+                    <a href="https://github.com/ign13101/sos2223-11-react">gti-sos/SOS2223-11</a>
                 </p>
             </Col>
         </Row>

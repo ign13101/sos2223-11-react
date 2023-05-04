@@ -44,7 +44,7 @@ const Associations = () => {
         setMessageAlert(false);
     }
 
-    const API = '/api/v2/association-stats';
+    const API = 'https://wheat-zesty-puppy.glitch.me/api/v2/association-stats';
     const dev = false;
 
     useEffect(() => {
@@ -204,7 +204,7 @@ const Associations = () => {
                 <Button id="createAssociation" color="success" onClick={toggleForm}>Crear asociación</Button>
                 <Button color="primary" onClick={loadData}>Cargar asociaciones</Button>
                 <Button color="primary" onClick={reload}>Recargar asociaciones</Button>
-                <Button color="primary" href="/react/association-stats/search">Filtrar asociaciones</Button>
+                <Button color="primary" href="/association-stats/search">Filtrar asociaciones</Button>
                 <Button color="danger" onClick={toggle}>Borrar asociaciones</Button>
                 <Modal isOpen={open} toggle={toggle}>
                     <ModalHeader toggle={toggle}>Vas a borrar todos los recursos de la base de datos</ModalHeader>
@@ -336,7 +336,7 @@ const Associations = () => {
                                             <Button>
                                                 <a
                                                     className="linkStyleless"
-                                                    href={`/react/association-stats/${association.province}/${association.registration_date}`}
+                                                    href={`/association-stats/${association.province}/${association.registration_date}`}
                                                 >
                                                     Editar
                                                 </a>

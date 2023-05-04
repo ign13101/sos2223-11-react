@@ -5,35 +5,22 @@ import Association from "./components/Association";
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 
-function About() {
-  return <h1>About us</h1>;
-}
-
-function Contact() {
-  return <h1>Contact us</h1>;
-}
-
-
-
 function App() {
   return (
     <Router >
       <Header />
       <Routes>
-        <Route path="/react" element={<Home />}>
+        <Route path="/" element={<Home />}>
           {/* Your default component */}
         </Route>
-        <Route path="/react/home" element={<Home />}>
+        <Route path="/home" element={<Home />}>
           {/* Your default component */}
         </Route>
-        <Route path="/react/association-stats" element={<Associations />}>
+        <Route path="/association-stats" element={<Associations />}>
           {/* Your about component */}
         </Route>
-        <Route path="/react/association-stats/:province/:registration_date" element={<Association />}>
+        <Route path="/association-stats/:province/:registration_date" element={<Association />}>
           {/* Your about component */}
-        </Route>
-        <Route path="/contact" element={<Contact />}>
-          {/* Your contact component */}
         </Route>
       </Routes>
       

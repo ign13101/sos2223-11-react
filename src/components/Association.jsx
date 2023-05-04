@@ -17,7 +17,7 @@ let Association = () => {
     const [right, setRight] = useState(true);
     const [result, setResult] = useState("");
     const [resultStatus, setResultStatus] = useState("");
-    let API = `/api/v2/association-stats/${province}/${registration_date}`;
+    let API = `https://wheat-zesty-puppy.glitch.me/api/v2/association-stats/${province}/${registration_date}`;
     
 
     async function getAssociation() {
